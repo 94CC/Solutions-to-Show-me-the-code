@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Task 0000:
-add a red coloured number on the top right hand corner on an image.
+add a red coloured number on the top right hand corner of an image.
 """
 
 
