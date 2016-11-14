@@ -32,7 +32,7 @@ if __name__=='__main__':
         im_number=draw_number(im,number)
         #combine two images
         outimage=Image.alpha_composite(im, im_number)
-        #save the outimage as an output file
+        #save the outimage as a JPEG file
         outfile=os.path.splitext(infile)[0]+'_number'
         outimage.save(outfile,'JPEG')
         outimage.show()
