@@ -1,2 +1,2 @@
 # Solutions-to-Show-me-the-code
-My attempt at questions in show-me-the-code repository.
+My attempt at programming exercises in show-me-the-code repository.
