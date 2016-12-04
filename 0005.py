@@ -1,3 +1,11 @@
+"""
+---------------------
+function:process photos in one or more directories by changing the size of photos to 
+         not more than the resolution ratio of iphone 5s. save the new photos in a new directory.
+operation:running python script in cmd. The second argument is the path of the directory
+language:python 3.5
+----------------------"""
+
 import os,sys
 from PIL import Image
 
@@ -28,13 +36,5 @@ def process_files():
             infile=indir+os.path.sep+infile
             change_size(infile,outdir)
             
-#--------Program starts----------        
-print ("""
----------------------
-function:process photos in one or more directories by changing the size of photos to 
-         not more than the resolution ratio of iphone 5s. save the new photos in a new directory.
-operation:running python script in cmd. The second argument is the path of the directory
-language:python 3.5
-----------------------""")
 if __name__=='__main__':
     process_files()
