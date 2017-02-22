@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+"""
+Find content in an html file
+"""
+import sys
+import os
+import re
+
+class Content:
+    def __init__(self,file):
+        self.file=file
+    def findContent(self):
+        htmlcontent=re.findall(r'>(.+?)<', self.file.read())
+        return htmlcontent
+    
+def main():
+    file=sys.argv[1]
+    extension=os.path.splitext(file)[1]
+    if extension=='.html':
+        with open(file) as f:
+            htmlModel=Content(f)
+            htmlcontent=htmlModel.findContent()
+            print (htmlcontent)
+    else:
+        print ('wrong file format!')
+    
+if __name__=='__main__':
+    main()
